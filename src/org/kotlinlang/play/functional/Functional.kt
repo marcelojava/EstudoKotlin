@@ -1,13 +1,18 @@
 package org.kotlinlang.play.functional
 
-fun soma(a : Int, b : Int) = a + b
-fun multipicar(a : Int, b : Int) =  a * b
+class Calculadora {
 
-fun calcular(a: Int, b : Int, operation: (Int, Int) -> Int) : Int {
+    fun soma(a : Int, b : Int) = a + b
+    fun multipicar(a : Int, b : Int) =  a * b
+
+    fun calcular(a: Int, b : Int, operation: (Int, Int) -> Int) : Int {
         return operation(a, b)
+    }
 }
 
+
 fun main() {
-    println(calcular(10, 10, ::soma))
-    println(calcular(10, 10, ::multipicar))
+    val calc = Calculadora()
+    println(calc.calcular(10, 10, calc::soma))
+    println(Calculadora().calcular(10, 10, calc::multipicar))
 }
