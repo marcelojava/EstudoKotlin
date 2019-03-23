@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.introduction
 
 fun printMessage(message : String) : Unit {
     println(message)

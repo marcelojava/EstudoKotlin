@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.introduction
 
 fun main() {
     infix fun Int.times(str : String) = str.repeat(this)

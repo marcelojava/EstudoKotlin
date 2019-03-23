@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.controlflow
 
 class Animal(val name : String)
 
@@ -9,7 +9,12 @@ class Zoo(val animals : List<Animal>) {
 }
 
 fun main() {
-    val zoo = Zoo(listOf(Animal("Macaco"), Animal("leao")))
+    val zoo = Zoo(
+        listOf(
+            Animal("Macaco"),
+            Animal("leao")
+        )
+    )
 
     for (animal in zoo) {
         println(animal.name)

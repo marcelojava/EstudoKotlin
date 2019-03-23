@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.introduction
 
 fun main() {
     var neverNull : String = "This can't be null"

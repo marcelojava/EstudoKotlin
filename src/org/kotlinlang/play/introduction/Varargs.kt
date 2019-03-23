@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.introduction
 
 fun main() {
     printAll("Marcelo", "Jessyca", "Alice", "你好")

@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.controlflow
 
 fun main() {
     for (i in 1..3) {

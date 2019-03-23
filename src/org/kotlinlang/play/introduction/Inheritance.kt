@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.introduction
 
 open class Dog {
     open fun sayHello() {

@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.introduction
 
 class MutableStack<E>(vararg  itens : E) {
     private val elements = itens.toMutableList()
