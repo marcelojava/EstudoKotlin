@@ -12,9 +12,10 @@ val Pedido.separarNomesItemPorVirgula : String
     get() = itens.map { it.nome }.joinToString()
 
 fun main() {
-    val pedido = Pedido(listOf(Item("pao", 1.50F), Item("bolacha", 5.50F),
-        Item("agua", 0.9F)
-    ))
+    val itens = listOf(Item("pao", 1.50F), Item("bolacha", 5.50F),
+        Item("agua", 0.9F))
+
+    val pedido = Pedido(itens)
 
     println("Valor maximo preco : ${pedido.valorProdutoDeMaiorPreco()}")
     println("Valor minimo preco : ${pedido.valorProdutoDeMenorPreco()}")
